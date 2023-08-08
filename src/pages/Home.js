@@ -1,4 +1,4 @@
-import Products from './Products'
+import Products from '../component/Products';
 import {Link} from 'react-router-dom';
 const Home = () => {
     return (
