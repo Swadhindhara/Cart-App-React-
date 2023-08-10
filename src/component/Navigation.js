@@ -1,5 +1,10 @@
 import {Link} from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../CartContext';
 const Navigation = () => {
+
+    const  {cart} = useContext(CartContext);
+
     return (
         <>
             <nav className="container mx-auto flex items-center justify-between py-5 ">
@@ -12,7 +17,7 @@ const Navigation = () => {
                         <li className='bg-[#f59e0d] px-4 py-2 rounded-3xl'>
                             <Link to="/cart" >
                                 <div className='flex gap-2 '>
-                                    <span>05</span>
+                                    <span>{ cart.totalItems ? cart.totalItems : 0 }</span>
                                     <img src="./images/cart.png" alt="cart-icon"/>
                                 </div>
                             </Link>
