@@ -12,7 +12,7 @@ const Home = () => {
                             <h5 className='mb-2 font-bold text-[#F59E0D] text-lg font-pop'>Easier for you!</h5>
                             <p className='mb-4 text-zinc-400 w-[280px] font-pop'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius delectus porro quis velit vitae architecto odit recusandae.</p>
                         </div>
-                        <Link to = "/products"><button className='md:px-6 md:py-2 px-8 py-4 rounded-full text-white font-bold mt-[7%] bg-yellow-500 hover:bg-yellow-600 mt-[10%]'>Shop Now</button></Link>
+                        <Link to = "/products"><button className='md:px-6 md:py-2 px-8 py-4 font-pop rounded-full text-white font-bold mt-[7%] bg-yellow-500 hover:bg-yellow-600 mt-[10%]'>Shop Now</button></Link>
                     </div>
                     <div className='md:w-1/2 mb-8 md:mb-0 flex justify-center items-center '>
                         <img className='w-4/5' src="./images/shopping.svg" alt="pizza-image" />
