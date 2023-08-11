@@ -7,6 +7,7 @@ import Navigation from "./component/Navigation";
 import SingleProduct from './pages/SingleProduct';
 import { CartContext } from './CartContext';
 import { useEffect, useState } from 'react';
+import Footer from './component/Footer';
 
 const App = () => {
     const [cart, setCart] = useState({});
@@ -33,6 +34,7 @@ const App = () => {
                         <Route path="/cart" element={<Cart />}></Route>
                     </Routes>
                 </CartContext.Provider>
+                <Footer />
             </Router>
         </>
     )

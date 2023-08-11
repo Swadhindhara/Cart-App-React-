@@ -54,7 +54,7 @@ const Product = (props) => {
                 <div className="h-[50px] flex items-start justify-center text-center px-4"><h2 className="text-lg font-bold py-2 ">{finalProductName}</h2></div>
                 <div className="bg-[#ffffff] mt-[45px] md:mt-[30px] flex items-center justify-center"><span className="bg-gray-200 py-1 rounded-full text-sm px-4 ">Rating {props.product.rating.rate}</span></div>
                 <div className="flex flex-row justify-between items-center mt-4 mb-2">
-                    <span className=" md:ml-[-30%] ml-[-10%]">{price}</span>
+                    <span className=" md:ml-[-30%] ml-[-10%] bg-zinc-300 px-2">{price}</span>
                     <button disabled = {isAdding} onClick={(e) => {addToCart(e, props.product)}} className= {` ${isAdding ? 'bg-[teal] text-white':'bg-[#f59e0d]'} py-1 px-4 rounded-full font-bold mr-[-10%] md:mr-[-30%]`} >Add{isAdding? "ed" : " " }</button>
                 </div>
             </div>
