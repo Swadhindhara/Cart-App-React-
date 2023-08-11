@@ -99,14 +99,14 @@ const Cart = () => {
                     <div className="flex items-center md:justify-between md:w-[450px] md:pb-0 pb-6">
                       <img className="h-24" src={product.image} alt="" />
                       <div className='flex flex-col'>
-                        <span className="font-medium ml-4 md:w-48 mb-4 text-sm">{product.title}</span>
+                        <span className="font-medium ml-4 md:w-48 mb-4 text-sm font-mont">{product.title}</span>
                         <span className='bg-gray-300 px-4 ml-2 md:hidden w-[100px] ml-[16px]'>$ {getSum(product.id, product.price)}</span>
                       </div>
                     </div>
                     <div className='md:w-[200px] flex items-center md:justify-center justify-between ml-2 mr-2'>
                       <div className='flex items-center'>
                       <button onClick={() => { decrement(product.id) }} className="w-[25px]"><img src="/images/minus_icon.png" alt="increase_button" /></button>
-                      <span className="px-4"><b>{getQty(product.id)}</b></span>
+                      <span className="px-4 font-pop"><b>{getQty(product.id)}</b></span>
                       <button onClick={() => { increment(product.id) }} className="w-[25px]"><img src="/images/plus_icon.png" alt="decrease_button" /></button>
                       </div>
                       <div>
@@ -114,7 +114,7 @@ const Cart = () => {
                       </div>
                     </div>
                     <div className='md:w-[380px] flex items-center md:justify-around '>
-                      <span className='bg-gray-300 px-4 ml-2 hidden md:block'> {getSum(product.id, product.price)}</span>
+                      <span className='bg-gray-300 px-4 ml-2 hidden md:block font-pop font-semibold'>$ {getSum(product.id, product.price)}</span>
                       <button onClick={() => { handleDelete(product.id) }} className='hidden lg:block' ><img className="w-[25px]" src="/images/trash.svg" alt="" /></button>
                     </div>
                   </div>
@@ -125,10 +125,10 @@ const Cart = () => {
         </ul>
         <hr className="my-6" />
         <div className="text-right mr-4">
-          <b>Grand Total:</b> $ {total - (total/2)}
+          <b className='font-mont'>Grand Total:</b> $ {total - (total/2)}
         </div>
         <div className="text-right mt-6 mr-4">
-          <button onClick={handleOrderNow} className=" bg-[#F59E0D] px-4 py-2 rounded-full leading-none">Place Order</button>
+          <button onClick={handleOrderNow} className=" bg-[#F59E0D] font-pop px-4 py-2 rounded-full leading-none">Place Order</button>
         </div>
       </div>
       : <img className='mx-auto w-1/2 mt-12 md:w-[30%] ' src="/images/empty-cart.png" alt="" />

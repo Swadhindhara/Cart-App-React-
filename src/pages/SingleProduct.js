@@ -26,12 +26,12 @@ const SingleProduct = () => {
         </div>
         <div className=" md:w-1/2 py-[43px] ml-4 md:ml-0 mr-4 md:mr-0">
           <div className="mt-6 md:mr-[30%]">
-            <h1 className="md:text-2xl text-xl font-bold">Product Name: <span className="font-medium">{product.title}</span></h1>
-            <h2 className="font-medium mt-2">Category: {product.category} </h2>
-            <h3 className="mt-4 mb-2 text-justify">Description: <span className="text-[#212121]">{product.description}</span></h3>
+            <h1 className="md:text-2xl text-xl font-bold font-mont">Product Name: <span className="font-medium">{product.title}</span></h1>
+            <h2 className="font-medium mt-2 font-mont">Category: {product.category} </h2>
+            <h3 className="mt-4 mb-2 text-justify font-pop">Description: <span className="text-[#212121]">{product.description}</span></h3>
             <div className="mt-4">
-              <span className="bg-zinc-200 p-2">Price: $ {product.price}</span>
-              <button className="ml-4 bg-[#F59E0D] px-2 py-2 rounded-full">Add to Cart</button>
+              <span className="bg-zinc-200 p-2 font-pop font-semibold">Price: $ {product.price}</span>
+              <button className="ml-4 bg-[#F59E0D] px-2 py-2 rounded-full font-pop">Add to Cart</button>
             </div>
           </div>
         </div>
