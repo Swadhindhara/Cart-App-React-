@@ -28,14 +28,6 @@ const Product = (props) => {
         setTimeout(() => {
             setIsAdding(false);
         }, 500);
-
-        //
-        // const cart = {
-        //     items: {
-        //         id:
-        //     }
-        // }
-
     }
 
     const productName = props.product.title;
@@ -49,13 +41,13 @@ const Product = (props) => {
 
     return (
         <Link to= {`/product/${props.product.id}`}>
-            <div className="card md:w-[250px] bg-[#ffffff] w-[180px] flex flex-col justify-center items-center max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
+            <div className="card md:w-[250px] bg-[#ffffff] w-[170px] flex flex-col justify-center items-center max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
                 <div className="h-[250px] flex items-center"><img className="w-[130px]" src={props.product.image} alt="pizza" /></div>
                 <div className="h-[50px] flex items-start justify-center text-center px-4"><h2 className="text-lg font-bold py-2 font-mont">{finalProductName}</h2></div>
-                <div className="bg-[#ffffff] mt-[45px] md:mt-[30px] flex items-center justify-center"><span className="bg-gray-200 py-1 rounded-full text-sm px-4 ">Rating {props.product.rating.rate}</span></div>
+                <div className="bg-[#ffffff] mt-[45px] md:mt-[30px] flex items-center justify-center"><span className="bg-gray-200 py-1 rounded-full text-sm px-2 ">Rating {props.product.rating.rate}</span></div>
                 <div className="flex flex-row justify-between items-center mt-4 mb-2">
-                    <span className=" md:ml-[-30%] ml-[-10%] bg-zinc-300 px-2">{price}</span>
-                    <button disabled = {isAdding} onClick={(e) => {addToCart(e, props.product)}} className= {` ${isAdding ? 'bg-[teal] text-white':'bg-[#f59e0d]'} py-1 px-4 rounded-full font-bold mr-[-10%] md:mr-[-30%] font-pop`} >Add{isAdding? "ed" : " " }</button>
+                    <span className=" md:ml-[-30%]  bg-zinc-300 px-2">{price}</span>
+                    <button disabled = {isAdding} onClick={(e) => {addToCart(e, props.product)}} className= {` ${isAdding ? 'bg-[#FF6666] text-white':'bg-[#f59e0d]'} py-1 md:px-4 px-3 rounded-full font-bold mr-[-10%] md:mr-[-30%] font-pop`} >Add</button>
                 </div>
             </div>
         </Link>

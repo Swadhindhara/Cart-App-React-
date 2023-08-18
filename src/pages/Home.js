@@ -6,8 +6,8 @@ const Home = () => {
             <div className="hero py-16 mt-[-20%] md:mt-[-10%] xl:mt-[0%] " >
                 <div className="container mx-auto justify-center flex flex-col-reverse md:flex-row  items-center ">
                     <div className='w-1/2 flex justify-start items-start flex-col w-[80%] md:pl-[5%] lg:w-[50%]  mt-[-5%] md:mt-[0%] '>
-                        <h6 className="text-5xl md:text-6xl font-thin  text-slate-400 font-pop">Better Your</h6>
-                        <h1 className="text-5xl md:text-6xl font-semibold mb-6 text-zinc-600 font-mont">E-Commerce</h1>
+                        <h6 className="text-3xl md:text-6xl font-thin  text-slate-400 font-pop">Better Your</h6>
+                        <h1 className="text-4xl md:text-6xl font-semibold mb-6 text-zinc-600 font-mont">E-Commerce</h1>
                         <div>
                             <h5 className='mb-2 font-bold text-[#F59E0D] text-lg font-pop'>Easier for you!</h5>
                             <p className='mb-4 text-zinc-400 w-[280px] font-pop'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eius delectus porro quis velit vitae architecto odit recusandae.</p>

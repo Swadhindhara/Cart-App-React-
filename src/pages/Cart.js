@@ -125,10 +125,10 @@ const Cart = () => {
         </ul>
         <hr className="my-6" />
         <div className="text-right mr-4">
-          <b className='font-mont'>Grand Total:</b> $ {total - (total/2)}
+          <b className='font-mont'>Grand Total:</b> $ {(total - (total/2)).toFixed(2)}
         </div>
         <div className="text-right mt-6 mr-4">
-          <button onClick={handleOrderNow} className=" bg-[#F59E0D] font-pop px-4 py-2 rounded-full leading-none">Place Order</button>
+          <button onClick={handleOrderNow} className=" bg-[#F59E0D] font-pop px-4 py-2 rounded-full text-white leading-none">Check out</button>
         </div>
       </div>
       : <img className='mx-auto w-1/2 mt-12 md:w-[30%] ' src="/images/empty-cart.png" alt="" />

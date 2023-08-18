@@ -6,10 +6,10 @@ import {Link} from 'react-router-dom';
 const Footer = () => {
     return (
         <>
-            <div className="border-2 mt-12 bg-zinc-800 py-12 flex gap-12 justify-evenly flex-wrap ">
-                <div className='md:ml-0 ml-12'>
+            <div className="border-2 mt-12 bg-zinc-500 py-12 flex gap-12 justify-evenly flex-wrap ">
+                <div className='md:ml-0 ml-4'>
                     <div className="mb-4">
-                        <img className="w-[170px]" src="/images/shopping_logo.jpg" alt="" />
+                        <img className="w-[170px]" src="/images/shopping_logo.png" alt="" />
                     </div>
                     <div>
                         <h2 className="text-[#f59e0d] font-semibold text-2xl mb-2 font-mont">Contact Us</h2>
@@ -42,11 +42,14 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <div className='md:ml-0 ml-12'>
+                    <div className='md:ml-0 ml-4'>
                         <h3 className="text-[#f59e0d] font-semibold text-2xl mb-4 font-mont">News Latter Subscription</h3>
                         <p className="text-white hover:text-[#f59e0d] md:w-[373px] font-pop">Get the latest Products & Best deals in your inbox as first person.</p>
                     </div>
                 </div>
+            </div>
+            <div className='text-center bg-zinc-900 text-white'>
+                <h3>© 2023 Swadhin Dhara, All rights reserved.</h3>
             </div>
         </>
     )
