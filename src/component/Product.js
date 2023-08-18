@@ -41,7 +41,7 @@ const Product = (props) => {
 
     return (
         <Link to= {`/product/${props.product.id}`}>
-            <div className="card md:w-[250px] bg-[#ffffff] w-[170px] flex flex-col justify-center items-center max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
+            <div className="card md:w-[250px] bg-[#ffffff] w-[170px] flex flex-col justify-center items-center max-w-xs rounded-md shadow-md ">
                 <div className="h-[250px] flex items-center"><img className="w-[130px]" src={props.product.image} alt="pizza" /></div>
                 <div className="h-[50px] flex items-start justify-center text-center px-4"><h2 className="text-lg font-bold py-2 font-mont">{finalProductName}</h2></div>
                 <div className="bg-[#ffffff] mt-[45px] md:mt-[30px] flex items-center justify-center"><span className="bg-gray-200 py-1 rounded-full text-sm px-2 ">Rating {props.product.rating.rate}</span></div>
